@@ -1,0 +1,1 @@
+/home/okovalov/prj/laravelblog/app/views/posts/index.blade.php
