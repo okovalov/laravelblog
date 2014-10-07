@@ -9,3 +9,5 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function () {
     Route::resource('posts', 'AdminPostsController', array('except' => 'show'));
 });
 
+Route::get('/', array('as' => 'home', 'uses' => 'PostsController@getIndex'));
+Route::get('/post/{id}', array('as' => 'post', 'uses' => 'PostsController@getPost'))->where('id', '[1-9][0-9]*');
