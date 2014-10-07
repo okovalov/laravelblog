@@ -1,6 +1,7 @@
 <htmL>
+
 <head>
-    <title>Admin panel</title>
+    <title>My Blog</title>
     {{ HTML::style('css/style.css') }}
 </head>
 <body>
